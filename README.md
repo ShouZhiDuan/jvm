@@ -4,16 +4,27 @@ JKD官网https://docs.oracle.com/javase/specs/jvms/se8/html/jvms-1.html#jvms-1.2
 
 ## 1、常用JVM操作命令
 * 生成二进制文件 Test.class 
-javac -g:vars Test.java
+`javac -g:vars Test.java`
 * 二进制反编译字节码
-javap -v -p Test.class 
+`javap -v -p Test.class` 
 
 
 ## 2、类文件描述
 https://docs.oracle.com/javase/specs/jvms/se8/html/jvms-4.html
 
 
-## 3、[类的加载过程参考](https://tin.js.org/2021/02/14/openjdk-constant-pool/)
+## 3、类加载[类的加载过程参考](https://tin.js.org/2021/02/14/openjdk-constant-pool/)
+### 3.1 加载过程
 * 加载
 * 链接
 * 执行
+
+
+
+
+### 4、JVM常用参数
+`-Xverify:none`  符号引用验证(类加载连接过程有个这个阶段)
+
+
+
+
