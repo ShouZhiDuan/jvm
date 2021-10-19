@@ -42,6 +42,7 @@ jvm.jar  > jvm.log 2>&1 &
 3、输出JVM常用默认参数以及自定义配置过的参数
 * -XX:+PrintCommandLineFlags  [全局参数](https://blog.csdn.net/lanwp5302/article/details/100183369) 
 开启启动jar输出jvm相关参数。例如堆大小设置、垃圾收集器等相关参数如下：
+***
 -XX:-BytecodeVerificationLocal 
 ***
 -XX:-BytecodeVerificationRemote 
