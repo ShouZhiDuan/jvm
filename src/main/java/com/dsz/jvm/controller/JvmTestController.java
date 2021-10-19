@@ -14,7 +14,10 @@ public class JvmTestController {
 
     @GetMapping("/test1")
     public Object test(String msg){
-        return "OK" + msg;
+        while (true){
+            byte[] bytes = new byte[100];
+        }
+        //return "OK" + msg;
     }
 
 }

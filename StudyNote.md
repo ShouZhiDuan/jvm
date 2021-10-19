@@ -33,24 +33,42 @@ jvm.jar  > jvm.log 2>&1 &
 
 
 # JVM常用参数 全局参数：jvm系统默认参数，也可以用在单个jvm进程中。
-* -Xverify:none  符号引用验证(类加载连接过程有个这个阶段)
-* -XX:+PrintGCDetails [全局参数] 打印垃圾回收日志 java -XX:+PrintGCDetails -version
-* -XX:+PrintCommandLineFlags [全局参数]  java -XX:+PrintCommandLineFlags -version
-开启启动jar输出jvm相关参数(堆大小设置、垃圾收集器等相关参数：
-`-XX:-BytecodeVerificationLocal 
-  -XX:-BytecodeVerificationRemote 
-  -XX:G1ConcRefinementThreads=8 
-  -XX:GCDrainStackTargetSize=64 
-  -XX:+HeapDumpOnOutOfMemoryError 
-  -XX:HeapDumpPath=/tmp/gc.hprof 
-  -XX:InitialHeapSize=260254336 
-  -XX:+ManagementServer 
-  -XX:MaxHeapSize=4164069376 
-  -XX:+PrintCommandLineFlags 
-  -XX:ReservedCodeCacheSize=251658240 
-  -XX:+SegmentedCodeCache 
-  -XX:+UseCompressedClassPointers 
-  -XX:+UseCompressedOops 
-  -XX:+UseG1GC
- `
-)
+1、符号引用验证(类加载连接过程有个这个阶段)
+* -Xverify:none  [进程参数]
+
+2、输出垃圾回收日志详情
+* -XX:+PrintGCDetails  [全局参数](https://blog.csdn.net/lanwp5302/article/details/100183369)
+
+3、输出JVM常用默认参数以及自定义配置过的参数
+* -XX:+PrintCommandLineFlags  [全局参数](https://blog.csdn.net/lanwp5302/article/details/100183369) 
+开启启动jar输出jvm相关参数。例如堆大小设置、垃圾收集器等相关参数如下：
+-XX:-BytecodeVerificationLocal 
+***
+-XX:-BytecodeVerificationRemote 
+***
+-XX:G1ConcRefinementThreads=8 
+***
+-XX:GCDrainStackTargetSize=64 
+***
+-XX:+HeapDumpOnOutOfMemoryError 
+***
+-XX:HeapDumpPath=/tmp/gc.hprof  当出现内存溢出，输出堆栈日志。
+***
+-XX:InitialHeapSize=260254336  初始化堆的最小值 单位：byte
+***
+-XX:+ManagementServer 
+***
+-XX:MaxHeapSize=4164069376  初始化堆的最大值 单位：byte
+***
+-XX:+PrintCommandLineFlags 输出JVM默认的参数列表
+***
+-XX:ReservedCodeCacheSize=251658240 
+***
+-XX:+SegmentedCodeCache 
+***
+-XX:+UseCompressedClassPointers 
+***
+-XX:+UseCompressedOops 使用指针压缩
+***
+-XX:+UseG1GC 使用的垃圾收集器
+***
