@@ -2,8 +2,8 @@ package com.dsz.jvm.java_spi;
 
 /**
  * @Auther: ShouZhi@Duan
- * @Date: 2021/10/20 17:44
- * @Description:
+ * @Description: JAVA SPI TEST
  */
 public interface SpiTestService {
+    String sayHello(String msg);
 }
