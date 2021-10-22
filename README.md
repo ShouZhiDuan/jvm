@@ -27,5 +27,7 @@ https://docs.oracle.com/javase/specs/jvms/se8/html/jvms-4.html
 `-Xverify:none`  符号引用验证(类加载连接过程有个这个阶段)
 
 
-
+### 5、项目只是体系
+* 实现自定义类加载器 com.dsz.jvm.class_load
+* 实现jvm热部署 com.dsz.jvm.class_load.hot_deploy
 
