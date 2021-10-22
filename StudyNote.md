@@ -69,7 +69,7 @@ jvm.jar  > jvm.log 2>&1 &
 ***
 -XX:+UseCompressedClassPointers 
 ***
--XX:+UseCompressedOops 使用指针压缩
+-XX:+UseCompressedOops 使用指针压缩（前提JVM内存不能超过32G,否则指针压缩会失效）
 ***
 -XX:+UseG1GC 使用的垃圾收集器
 ***

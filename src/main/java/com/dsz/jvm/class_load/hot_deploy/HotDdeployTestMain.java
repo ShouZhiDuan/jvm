@@ -8,11 +8,11 @@ import java.util.concurrent.TimeUnit;
  */
 public class HotDdeployTestMain {
     public static void main(String[] args) throws InterruptedException {
-        HotDeploy hot = new HotDeploy("com.dsz.jvm.class_load.hot_deploy.Task");
-        hot.monitor();
-        while (true) {
-            TimeUnit.SECONDS.sleep(2);
-            hot.getTask().run();
-        }
+//        HotDeploy hot = new HotDeploy("com.dsz.jvm.class_load.hot_deploy.Task");
+//        hot.monitor();
+//        while (true) {
+//            TimeUnit.SECONDS.sleep(2);
+//            hot.getTask().run();
+//        }
     }
 }
