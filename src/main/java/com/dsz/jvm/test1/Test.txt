@@ -1,0 +1,164 @@
+Classfile /E:/dsz-git-work/jvm/src/main/java/com/dsz/jvm/test1/Test.class
+  Last modified 2021Äê10ÔÂ22ÈÕ; size 1002 bytes
+  MD5 checksum 12b46fd3ec76d5f8e23c47543dc85b28
+  Compiled from "Test.java"
+public class com.dsz.jvm.test1.Test
+  minor version: 0
+  major version: 55
+  flags: (0x0021) ACC_PUBLIC, ACC_SUPER
+  this_class: #9                          // com/dsz/jvm/test1/Test
+  super_class: #10                        // java/lang/Object
+  interfaces: 0, fields: 2, methods: 6, attributes: 1
+Constant pool:
+   #1 = Methodref          #10.#31        // java/lang/Object."<init>":()V
+   #2 = String             #32            // This My Name!!!!!!
+   #3 = Fieldref           #9.#33         // com/dsz/jvm/test1/Test.name:Ljava/lang/String;
+   #4 = Methodref          #34.#35        // java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+   #5 = Fieldref           #9.#36         // com/dsz/jvm/test1/Test.count:Ljava/lang/Integer;
+   #6 = Fieldref           #37.#38        // java/lang/System.out:Ljava/io/PrintStream;
+   #7 = String             #39            // Hello World
+   #8 = Methodref          #40.#41        // java/io/PrintStream.println:(Ljava/lang/String;)V
+   #9 = Class              #42            // com/dsz/jvm/test1/Test
+  #10 = Class              #43            // java/lang/Object
+  #11 = Utf8               name
+  #12 = Utf8               Ljava/lang/String;
+  #13 = Utf8               count
+  #14 = Utf8               Ljava/lang/Integer;
+  #15 = Utf8               <init>
+  #16 = Utf8               (Ljava/lang/String;Ljava/lang/Integer;)V
+  #17 = Utf8               Code
+  #18 = Utf8               LineNumberTable
+  #19 = Utf8               getName
+  #20 = Utf8               ()Ljava/lang/String;
+  #21 = Utf8               setName
+  #22 = Utf8               (Ljava/lang/String;)V
+  #23 = Utf8               getCount
+  #24 = Utf8               ()Ljava/lang/Integer;
+  #25 = Utf8               setCount
+  #26 = Utf8               (Ljava/lang/Integer;)V
+  #27 = Utf8               main
+  #28 = Utf8               ([Ljava/lang/String;)V
+  #29 = Utf8               SourceFile
+  #30 = Utf8               Test.java
+  #31 = NameAndType        #15:#44        // "<init>":()V
+  #32 = Utf8               This My Name!!!!!!
+  #33 = NameAndType        #11:#12        // name:Ljava/lang/String;
+  #34 = Class              #45            // java/lang/Integer
+  #35 = NameAndType        #46:#47        // valueOf:(I)Ljava/lang/Integer;
+  #36 = NameAndType        #13:#14        // count:Ljava/lang/Integer;
+  #37 = Class              #48            // java/lang/System
+  #38 = NameAndType        #49:#50        // out:Ljava/io/PrintStream;
+  #39 = Utf8               Hello World
+  #40 = Class              #51            // java/io/PrintStream
+  #41 = NameAndType        #52:#22        // println:(Ljava/lang/String;)V
+  #42 = Utf8               com/dsz/jvm/test1/Test
+  #43 = Utf8               java/lang/Object
+  #44 = Utf8               ()V
+  #45 = Utf8               java/lang/Integer
+  #46 = Utf8               valueOf
+  #47 = Utf8               (I)Ljava/lang/Integer;
+  #48 = Utf8               java/lang/System
+  #49 = Utf8               out
+  #50 = Utf8               Ljava/io/PrintStream;
+  #51 = Utf8               java/io/PrintStream
+  #52 = Utf8               println
+{
+  private java.lang.String name;
+    descriptor: Ljava/lang/String;
+    flags: (0x0002) ACC_PRIVATE
+
+  private java.lang.Integer count;
+    descriptor: Ljava/lang/Integer;
+    flags: (0x0002) ACC_PRIVATE
+
+  public com.dsz.jvm.test1.Test(java.lang.String, java.lang.Integer);
+    descriptor: (Ljava/lang/String;Ljava/lang/Integer;)V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=2, locals=3, args_size=3
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: aload_0
+         5: ldc           #2                  // String This My Name!!!!!!
+         7: putfield      #3                  // Field name:Ljava/lang/String;
+        10: aload_0
+        11: sipush        999
+        14: invokestatic  #4                  // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+        17: putfield      #5                  // Field count:Ljava/lang/Integer;
+        20: aload_0
+        21: aload_1
+        22: putfield      #3                  // Field name:Ljava/lang/String;
+        25: aload_0
+        26: aload_2
+        27: putfield      #5                  // Field count:Ljava/lang/Integer;
+        30: return
+      LineNumberTable:
+        line 13: 0
+        line 9: 4
+        line 11: 10
+        line 14: 20
+        line 15: 25
+        line 16: 30
+
+  public java.lang.String getName();
+    descriptor: ()Ljava/lang/String;
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: getfield      #3                  // Field name:Ljava/lang/String;
+         4: areturn
+      LineNumberTable:
+        line 19: 0
+
+  public void setName(java.lang.String);
+    descriptor: (Ljava/lang/String;)V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=2, locals=2, args_size=2
+         0: aload_0
+         1: aload_1
+         2: putfield      #3                  // Field name:Ljava/lang/String;
+         5: return
+      LineNumberTable:
+        line 23: 0
+        line 24: 5
+
+  public java.lang.Integer getCount();
+    descriptor: ()Ljava/lang/Integer;
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: getfield      #5                  // Field count:Ljava/lang/Integer;
+         4: areturn
+      LineNumberTable:
+        line 27: 0
+
+  public void setCount(java.lang.Integer);
+    descriptor: (Ljava/lang/Integer;)V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=2, locals=2, args_size=2
+         0: aload_0
+         1: aload_1
+         2: putfield      #5                  // Field count:Ljava/lang/Integer;
+         5: return
+      LineNumberTable:
+        line 31: 0
+        line 32: 5
+
+  public static void main(java.lang.String[]);
+    descriptor: ([Ljava/lang/String;)V
+    flags: (0x0009) ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=2, locals=1, args_size=1
+         0: getstatic     #6                  // Field java/lang/System.out:Ljava/io/PrintStream;
+         3: ldc           #7                  // String Hello World
+         5: invokevirtual #8                  // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+         8: return
+      LineNumberTable:
+        line 35: 0
+        line 36: 8
+}
+SourceFile: "Test.java"
