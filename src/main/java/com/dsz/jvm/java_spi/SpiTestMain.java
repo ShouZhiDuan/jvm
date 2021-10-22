@@ -13,7 +13,7 @@ public class SpiTestMain {
         Iterator<SpiTestService> iterator = loader.iterator();
         while (iterator.hasNext()){
             SpiTestService spiTestService = iterator.next();
-            String msg = spiTestService.sayHello("Hellp SPI");
+            String msg = spiTestService.sayHello("HELLO SPI");
             System.out.println(msg);
         }
     }

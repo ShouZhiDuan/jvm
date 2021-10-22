@@ -73,3 +73,5 @@ jvm.jar  > jvm.log 2>&1 &
 ***
 -XX:+UseG1GC 使用的垃圾收集器
 ***
+-XX:+TraceClassUnloading 开启类卸载日志
+***
