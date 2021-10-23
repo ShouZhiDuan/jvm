@@ -80,7 +80,8 @@ jvm.jar  > jvm.log 2>&1 &
 -XX:SurvivorRatio=8 from:to:eden=1:1:8
 ***
 -XX:PermSize=10m -XX:MaxPermSize=10m JDK1.8之前的配置(永久代)，1.8之后是MetaSpace
-
+***
+-XX:MetaspaceSize=10m -XX:MaxMetaspaceSize=10m
 
 
 
