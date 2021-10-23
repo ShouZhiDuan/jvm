@@ -55,11 +55,11 @@ jvm.jar  > jvm.log 2>&1 &
 ***
 -XX:HeapDumpPath=/tmp/gc.hprof  当出现内存溢出，输出堆栈日志。
 ***
--XX:InitialHeapSize=260254336  初始化堆的最小值 单位：byte
+-XX:InitialHeapSize=260254336(-Xms20M)  初始化堆的最小值 单位：byte
 ***
 -XX:+ManagementServer 
 ***
--XX:MaxHeapSize=4164069376  初始化堆的最大值 单位：byte
+-XX:MaxHeapSize=4164069376(-Xmx20M)  初始化堆的最大值 单位：byte
 ***
 -XX:+PrintCommandLineFlags 输出JVM默认的参数列表
 ***
@@ -75,3 +75,13 @@ jvm.jar  > jvm.log 2>&1 &
 ***
 -XX:+TraceClassUnloading 开启类卸载日志
 ***
+-Xms100M 栈的大小
+***
+-XX:SurvivorRatio=8 from:to:eden=1:1:8
+***
+-XX:PermSize=10m -XX:MaxPermSize=10m JDK1.8之前的配置(永久代)，1.8之后是MetaSpace
+
+
+
+
+

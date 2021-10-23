@@ -1,0 +1,55 @@
+>>>>>>>>>>>>>>>>
+测试学习服务器
+192.168.10.16 
+工作目录
+/usr/local/java-work
+<<<<<<<<<<<<<<<
+
+
+1、启动jar
+启动参数位置
+springboot参数放在jar包之后
+nohup java -jar jvm.jar --spring.profiles.active=prod > jvm.log 2>&1 &
+
+jvm参数放在jar包之前
+nohup java -jar -Xverify:none jvm.jar  > jvm.log 2>&1 & (参数-Xverify:none生效)
+
+#注意：
+nohup java -jar jvm.jar  -Xverify:none  > jvm.log 2>&1 &(参数-Xverify:none放在jar之后，可以启动成功但是参数-Xverify:none不会生效)
+
+
+#多参数启动实例(后台启动模式)
+nohup java -jar \
+-Djava.rmi.server.hostname=192.168.10.16 \
+-Dcom.sun.management.jmxremote \
+-Dcom.sun.management.jmxremote.rmi.port=7098 \
+-Dcom.sun.management.jmxremote.port=7099 \
+-Dcom.sun.management.jmxremote.authenticate=false \
+-Dcom.sun.management.jmxremote.ssl=false \
+-XX:+HeapDumpOnOutOfMemoryError \
+-XX:HeapDumpPath=/tmp/gc.hprof \
+-Xverify:none \
+-XX:+PrintCommandLineFlags \
+jvm.jar  > jvm.log 2>&1 & 
+
+
+#多参数启动实例(监听启动模式)
+java -jar \
+-Djava.rmi.server.hostname=192.168.10.16 \
+-Dcom.sun.management.jmxremote \
+-Dcom.sun.management.jmxremote.rmi.port=7098 \
+-Dcom.sun.management.jmxremote.port=7099 \
+-Dcom.sun.management.jmxremote.authenticate=false \
+-Dcom.sun.management.jmxremote.ssl=false \
+-XX:+HeapDumpOnOutOfMemoryError \
+-XX:HeapDumpPath=/tmp/gc.hprof \
+-Xverify:none \
+-XX:+PrintCommandLineFlags \
+-XX:+PrintGCDetails \
+jvm.jar
+
+
+
+2、查看当前java进程虚拟机参数列表
+jps -v | grep (进程ID/jar名称)
+
