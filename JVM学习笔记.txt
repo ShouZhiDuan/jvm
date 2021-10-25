@@ -30,6 +30,8 @@ nohup java -jar \
 -XX:HeapDumpPath=/tmp/gc.hprof \
 -Xverify:none \
 -XX:+PrintCommandLineFlags \
+-XX:InitialHeapSize=4164069376 \
+-XX:MaxHeapSize=4164069376 \
 jvm.jar  > jvm.log 2>&1 & 
 
 
@@ -52,4 +54,65 @@ jvm.jar
 
 2、查看当前java进程虚拟机参数列表
 jps -v | grep (进程ID/jar名称)
+
+3、获取所有可设置参数及值的大小
+java -XX:+PrintFlagsFinal -version
+
+
+>>>测试参数
+-XX:+PrintCommandLineFlags
+-Xms100m
+-Xmx100m
+-XX:+PrintGCDetails
+-XX:+HeapDumpOnOutOfMemoryError
+-XX:SurvivorRatio=8
+-XX:HeapDumpPath=E:/test/gc.hprof
+<<<
+-XX:G1ConcRefinementThreads=8
+-XX:GCDrainStackTargetSize=64
+-XX:InitialHeapSize=260254336
+-XX:MaxHeapSize=4164069376
+-XX:+PrintCommandLineFlags
+-XX:ReservedCodeCacheSize=251658240
+-XX:+SegmentedCodeCache
+-XX:+UseCompressedClassPointers
+-XX:+UseCompressedOops
+-XX:+UseG1GC
+
+
+
+
+#参考https://segmentfault.com/a/1190000038320962
+1、查看jvm全局参数列表
+java -XX:+PrintFlagsFinal -version
+
+2、查看jvm运行参数
+jinfo -flags pid
+
+3、查看具体参数值
+jinfo -flag InitialHeapSize pid
+
+4、开启/关闭某个JVM参数
+jinfo -flag [+|-]name pid
+
+5、修改某个JVM进程的值
+jinfo -flag name=value pid
+
+6、输出当前JVM进程所有的系统属性
+jinfo -sysprops pid
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

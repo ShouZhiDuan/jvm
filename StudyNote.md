@@ -39,9 +39,11 @@ jvm.jar  > jvm.log 2>&1 &
 2、输出垃圾回收日志详情
 * -XX:+PrintGCDetails  [全局参数](https://blog.csdn.net/lanwp5302/article/details/100183369)
 
-3、输出JVM常用默认参数以及自定义配置过的参数
+3、输出JVM命令行中的参数列表
 * -XX:+PrintCommandLineFlags  [全局参数](https://blog.csdn.net/lanwp5302/article/details/100183369) 
 开启启动jar输出jvm相关参数。例如堆大小设置、垃圾收集器等相关参数如下：
+***
+-XX:+PrintFlagsFinal 获取所有可设置参数及值
 ***
 -XX:-BytecodeVerificationLocal 
 ***
