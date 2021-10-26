@@ -32,6 +32,7 @@ nohup java -jar \
 -XX:+PrintCommandLineFlags \
 -XX:InitialHeapSize=4164069376 \
 -XX:MaxHeapSize=4164069376 \
+-Xss2m \
 jvm.jar  > jvm.log 2>&1 & 
 
 

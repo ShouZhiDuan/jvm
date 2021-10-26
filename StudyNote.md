@@ -102,6 +102,8 @@ jvm.jar  > jvm.log 2>&1 &
 * -XX:+CMSIncrementalMode:设置为增量模式。适用于单CPU情况。
 * -XX:ParallelGCThreads=n:设置并发收集器新生代收集方式为并行收集时，使用的CPU数。并行收集线程数。
 ***
+-Xss600k 线程栈的大小，经测试可以默认设置到600k差不多。一般栈的调用深度3000-5000依据来算的。
+***
 
 
 
