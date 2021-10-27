@@ -30,6 +30,7 @@ nohup java -jar \
 -XX:HeapDumpPath=/tmp/gc.hprof \
 -Xverify:none \
 -XX:+PrintCommandLineFlags \
+-XX:+PrintFlagsFinal \
 -XX:InitialHeapSize=4164069376 \
 -XX:MaxHeapSize=4164069376 \
 -Xss2m \
@@ -48,6 +49,7 @@ java -jar \
 -XX:HeapDumpPath=/tmp/gc.hprof \
 -Xverify:none \
 -XX:+PrintCommandLineFlags \
+-XX:+PrintFlagsFinal \
 -XX:+PrintGCDetails \
 jvm.jar
 

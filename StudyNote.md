@@ -43,7 +43,8 @@ jvm.jar  > jvm.log 2>&1 &
 * -XX:+PrintCommandLineFlags  [全局参数](https://blog.csdn.net/lanwp5302/article/details/100183369) 
 开启启动jar输出jvm相关参数。例如堆大小设置、垃圾收集器等相关参数如下：
 ***
--XX:+PrintFlagsFinal 获取所有可设置参数及值
+-XX:+PrintFlagsFinal 获取所有参数
+-XX:+PrintCommandLineFlags 获取所有命令中的参数
 ***
 -XX:-BytecodeVerificationLocal 
 ***
@@ -104,7 +105,3 @@ jvm.jar  > jvm.log 2>&1 &
 ***
 -Xss600k 线程栈的大小，经测试可以默认设置到600k差不多。一般栈的调用深度3000-5000依据来算的。
 ***
-
-
-
-
