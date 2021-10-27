@@ -31,3 +31,7 @@ https://docs.oracle.com/javase/specs/jvms/se8/html/jvms-4.html
 * 实现自定义类加载器 com.dsz.jvm.class_load
 * 实现jvm热部署 com.dsz.jvm.class_load.hot_deploy
 * 计算对象实例大小 com.dsz.jvm.class_space.TestMain
+* 强引用和软引用 com.dsz.jvm.reference
+* JAVA SPI机制 com.dsz.jvm.java_spi
+* 虚拟机栈测试 com.dsz.jvm.class_stack
+* 虚拟机元空间测试 com.dsz.jvm.class_metaspace
