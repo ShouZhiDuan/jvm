@@ -5,4 +5,5 @@ package com.dsz.jvm.dto;
  * @Description:
  */
 public class TestDTO {
+    private String txt;
 }

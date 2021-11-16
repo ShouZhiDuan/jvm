@@ -86,7 +86,10 @@ java -XX:+PrintFlagsFinal -version
 
 
 #参考https://segmentfault.com/a/1190000038320962
-1、查看jvm全局参数列表
+1、查看jvm全局参数列表(如果有自定义编辑过的参数将会显示编辑后的参数)
+类似k:=v形式
+(uintx InitialHeapSize:= 104857600{product})
+
 java -XX:+PrintFlagsFinal -version
 
 2、查看jvm运行参数
