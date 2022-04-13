@@ -1,3 +1,4 @@
+/*
 package com.dsz.jvm.class_metaspace;
 
 import com.sun.xml.internal.ws.org.objectweb.asm.ClassWriter;
@@ -6,11 +7,13 @@ import com.sun.xml.internal.ws.org.objectweb.asm.Opcodes;
 import java.util.ArrayList;
 import java.util.List;
 
+*/
 /**
  * @Auther: ShouZhi@Duan
  * @Date: 2021/10/24 12:54
  * @Description:
- */
+ *//*
+
 public class MyMetaspace extends ClassLoader{
     public static List<Class<?>> createClasses() {
         List<Class<?>> classes = new ArrayList<Class<?>>();
@@ -38,3 +41,4 @@ public class MyMetaspace extends ClassLoader{
         }
     }
 }
+*/
