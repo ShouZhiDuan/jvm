@@ -60,6 +60,7 @@ jps -v | grep (进程ID/jar名称)
 
 3、获取所有可设置参数及值的大小
 java -XX:+PrintFlagsFinal -version
+java -XX:+PrintFlagsFinal -version > flags.txt
 
 
 >>>测试参数
@@ -108,7 +109,12 @@ jinfo -flag name=value pid
 jinfo -sysprops pid
 
 
-
+-XX:+PrintFlagsFinal
+-Xms100m -Xmx100m
+-Xss200k -XX:+PrintGCDetails
+-XX:+HeapDumpOnOutOfMemoryError
+-XX:SurvivorRatio=8
+-XX:HeapDumpPath=E:/test/gc.hprof
 
 
 
