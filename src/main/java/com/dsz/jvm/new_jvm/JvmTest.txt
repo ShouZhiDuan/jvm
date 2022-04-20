@@ -1,107 +1,165 @@
 Classfile /E:/dsz-git-work/jvm/src/main/java/com/dsz/jvm/new_jvm/JvmTest.class
-  Last modified 2022年4月13日; size 1425 bytes
-  MD5 checksum e49ab4ee2101db54b5d79bb5fef59e9f
+  Last modified 2022年4月13日; size 2186 bytes
+  MD5 checksum b8bfac478436ad33d6119fdb07c45338
   Compiled from "JvmTest.java"
 public class com.dsz.jvm.new_jvm.JvmTest
   minor version: 0
   major version: 55
   flags: (0x0021) ACC_PUBLIC, ACC_SUPER
-  this_class: #26                         // com/dsz/jvm/new_jvm/JvmTest
-  super_class: #8                         // java/lang/Object
-  interfaces: 0, fields: 6, methods: 5, attributes: 1
+  this_class: #36                         // com/dsz/jvm/new_jvm/JvmTest
+  super_class: #14                        // java/lang/Object
+  interfaces: 0, fields: 10, methods: 5, attributes: 3
 Constant pool:
-   #1 = Methodref          #8.#53         // java/lang/Object."<init>":()V
-   #2 = String             #54            // Jack
-   #3 = Fieldref           #26.#55        // com/dsz/jvm/new_jvm/JvmTest.name:Ljava/lang/String;
-   #4 = Double             100.0d
-   #6 = Methodref          #19.#56        // java/lang/Double.valueOf:(D)Ljava/lang/Double;
-   #7 = Fieldref           #26.#57        // com/dsz/jvm/new_jvm/JvmTest.salary:Ljava/lang/Double;
-   #8 = Class              #58            // java/lang/Object
-   #9 = Fieldref           #26.#59        // com/dsz/jvm/new_jvm/JvmTest.testObject:Ljava/lang/Object;
-  #10 = String             #60            // test final static address
-  #11 = Fieldref           #26.#61        // com/dsz/jvm/new_jvm/JvmTest.addressFnial:Ljava/lang/String;
-  #12 = Fieldref           #62.#63        // java/lang/System.out:Ljava/io/PrintStream;
-  #13 = String             #64            // Test Say...
-  #14 = Methodref          #49.#65        // java/io/PrintStream.println:(Ljava/lang/String;)V
-  #15 = Methodref          #66.#67        // java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
-  #16 = Methodref          #66.#68        // java/lang/Integer.intValue:()I
-  #17 = Double             16.0d
-  #19 = Class              #69            // java/lang/Double
-  #20 = Double             300.0d
-  #22 = Methodref          #19.#70        // java/lang/Double."<init>":(D)V
-  #23 = Methodref          #49.#71        // java/io/PrintStream.println:(Z)V
-  #24 = String             #72            // test static address
-  #25 = Fieldref           #26.#73        // com/dsz/jvm/new_jvm/JvmTest.addressStatic:Ljava/lang/String;
-  #26 = Class              #74            // com/dsz/jvm/new_jvm/JvmTest
-  #27 = Utf8               age
-  #28 = Utf8               Ljava/lang/Integer;
-  #29 = Utf8               name
-  #30 = Utf8               Ljava/lang/String;
-  #31 = Utf8               salary
-  #32 = Utf8               Ljava/lang/Double;
-  #33 = Utf8               testObject
-  #34 = Utf8               Ljava/lang/Object;
-  #35 = Utf8               addressStatic
-  #36 = Utf8               addressFnial
-  #37 = Utf8               ConstantValue
-  #38 = Utf8               <init>
-  #39 = Utf8               ()V
-  #40 = Utf8               Code
-  #41 = Utf8               LineNumberTable
-  #42 = Utf8               say
-  #43 = Utf8               calc
-  #44 = Utf8               (Ljava/lang/Integer;Ljava/lang/Integer;)Ljava/lang/Integer;
-  #45 = Utf8               main
-  #46 = Utf8               ([Ljava/lang/String;)V
-  #47 = Utf8               StackMapTable
-  #48 = Class              #75            // "[Ljava/lang/String;"
-  #49 = Class              #76            // java/io/PrintStream
-  #50 = Utf8               <clinit>
-  #51 = Utf8               SourceFile
-  #52 = Utf8               JvmTest.java
-  #53 = NameAndType        #38:#39        // "<init>":()V
-  #54 = Utf8               Jack
-  #55 = NameAndType        #29:#30        // name:Ljava/lang/String;
-  #56 = NameAndType        #77:#78        // valueOf:(D)Ljava/lang/Double;
-  #57 = NameAndType        #31:#32        // salary:Ljava/lang/Double;
-  #58 = Utf8               java/lang/Object
-  #59 = NameAndType        #33:#34        // testObject:Ljava/lang/Object;
-  #60 = Utf8               test final static address
-  #61 = NameAndType        #36:#30        // addressFnial:Ljava/lang/String;
-  #62 = Class              #79            // java/lang/System
-  #63 = NameAndType        #80:#81        // out:Ljava/io/PrintStream;
-  #64 = Utf8               Test Say...
-  #65 = NameAndType        #82:#83        // println:(Ljava/lang/String;)V
-  #66 = Class              #84            // java/lang/Integer
-  #67 = NameAndType        #77:#85        // valueOf:(I)Ljava/lang/Integer;
-  #68 = NameAndType        #86:#87        // intValue:()I
-  #69 = Utf8               java/lang/Double
-  #70 = NameAndType        #38:#88        // "<init>":(D)V
-  #71 = NameAndType        #82:#89        // println:(Z)V
-  #72 = Utf8               test static address
-  #73 = NameAndType        #35:#30        // addressStatic:Ljava/lang/String;
-  #74 = Utf8               com/dsz/jvm/new_jvm/JvmTest
-  #75 = Utf8               [Ljava/lang/String;
-  #76 = Utf8               java/io/PrintStream
-  #77 = Utf8               valueOf
-  #78 = Utf8               (D)Ljava/lang/Double;
-  #79 = Utf8               java/lang/System
-  #80 = Utf8               out
-  #81 = Utf8               Ljava/io/PrintStream;
-  #82 = Utf8               println
-  #83 = Utf8               (Ljava/lang/String;)V
-  #84 = Utf8               java/lang/Integer
-  #85 = Utf8               (I)Ljava/lang/Integer;
-  #86 = Utf8               intValue
-  #87 = Utf8               ()I
-  #88 = Utf8               (D)V
-  #89 = Utf8               (Z)V
+    #1 = Methodref          #14.#68       // java/lang/Object."<init>":()V
+    #2 = String             #69           // Jack
+    #3 = Fieldref           #36.#70       // com/dsz/jvm/new_jvm/JvmTest.name:Ljava/lang/String;
+    #4 = String             #71           // Jack2
+    #5 = Fieldref           #36.#72       // com/dsz/jvm/new_jvm/JvmTest.name2:Ljava/lang/String;
+    #6 = InvokeDynamic      #0:#76        // #0:makeConcatWithConstants:(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    #7 = Fieldref           #36.#77       // com/dsz/jvm/new_jvm/JvmTest.name3:Ljava/lang/String;
+    #8 = String             #78           // Jack5Jack5
+    #9 = Fieldref           #36.#79       // com/dsz/jvm/new_jvm/JvmTest.name5:Ljava/lang/String;
+   #10 = Double             100.0d
+   #12 = Methodref          #29.#80       // java/lang/Double.valueOf:(D)Ljava/lang/Double;
+   #13 = Fieldref           #36.#81       // com/dsz/jvm/new_jvm/JvmTest.salary:Ljava/lang/Double;
+   #14 = Class              #82           // java/lang/Object
+   #15 = Fieldref           #36.#83       // com/dsz/jvm/new_jvm/JvmTest.testObject:Ljava/lang/Object;
+   #16 = String             #84           // test final static address
+   #17 = Fieldref           #36.#85       // com/dsz/jvm/new_jvm/JvmTest.addressFnial:Ljava/lang/String;
+   #18 = Class              #86           // java/lang/String
+   #19 = String             #87           // 686868686868686
+   #20 = Methodref          #18.#88       // java/lang/String."<init>":(Ljava/lang/String;)V
+   #21 = Fieldref           #36.#89       // com/dsz/jvm/new_jvm/JvmTest.testString:Ljava/lang/String;
+   #22 = Fieldref           #90.#91       // java/lang/System.out:Ljava/io/PrintStream;
+   #23 = String             #92           // Test Say...
+   #24 = Methodref          #64.#93       // java/io/PrintStream.println:(Ljava/lang/String;)V
+   #25 = Methodref          #94.#95       // java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+   #26 = Methodref          #94.#96       // java/lang/Integer.intValue:()I
+   #27 = Float              16.0f
+   #28 = Methodref          #63.#97       // java/lang/Float.valueOf:(F)Ljava/lang/Float;
+   #29 = Class              #98           // java/lang/Double
+   #30 = Double             300.0d
+   #32 = Methodref          #29.#99       // java/lang/Double."<init>":(D)V
+   #33 = Methodref          #64.#100      // java/io/PrintStream.println:(Z)V
+   #34 = String             #101          // test static address
+   #35 = Fieldref           #36.#102      // com/dsz/jvm/new_jvm/JvmTest.addressStatic:Ljava/lang/String;
+   #36 = Class              #103          // com/dsz/jvm/new_jvm/JvmTest
+   #37 = Utf8               age
+   #38 = Utf8               Ljava/lang/Integer;
+   #39 = Utf8               name
+   #40 = Utf8               Ljava/lang/String;
+   #41 = Utf8               name2
+   #42 = Utf8               name3
+   #43 = Utf8               name5
+   #44 = Utf8               salary
+   #45 = Utf8               Ljava/lang/Double;
+   #46 = Utf8               testObject
+   #47 = Utf8               Ljava/lang/Object;
+   #48 = Utf8               addressStatic
+   #49 = Utf8               addressFnial
+   #50 = Utf8               ConstantValue
+   #51 = Utf8               testString
+   #52 = Utf8               <init>
+   #53 = Utf8               ()V
+   #54 = Utf8               Code
+   #55 = Utf8               LineNumberTable
+   #56 = Utf8               say
+   #57 = Utf8               calc
+   #58 = Utf8               (Ljava/lang/Integer;Ljava/lang/Integer;)Ljava/lang/Integer;
+   #59 = Utf8               main
+   #60 = Utf8               ([Ljava/lang/String;)V
+   #61 = Utf8               StackMapTable
+   #62 = Class              #104          // "[Ljava/lang/String;"
+   #63 = Class              #105          // java/lang/Float
+   #64 = Class              #106          // java/io/PrintStream
+   #65 = Utf8               <clinit>
+   #66 = Utf8               SourceFile
+   #67 = Utf8               JvmTest.java
+   #68 = NameAndType        #52:#53       // "<init>":()V
+   #69 = Utf8               Jack
+   #70 = NameAndType        #39:#40       // name:Ljava/lang/String;
+   #71 = Utf8               Jack2
+   #72 = NameAndType        #41:#40       // name2:Ljava/lang/String;
+   #73 = Utf8               BootstrapMethods
+   #74 = MethodHandle       6:#107        // REF_invokeStatic java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+   #75 = String             #108          // \u0001\u0001
+   #76 = NameAndType        #109:#110     // makeConcatWithConstants:(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+   #77 = NameAndType        #42:#40       // name3:Ljava/lang/String;
+   #78 = Utf8               Jack5Jack5
+   #79 = NameAndType        #43:#40       // name5:Ljava/lang/String;
+   #80 = NameAndType        #111:#112     // valueOf:(D)Ljava/lang/Double;
+   #81 = NameAndType        #44:#45       // salary:Ljava/lang/Double;
+   #82 = Utf8               java/lang/Object
+   #83 = NameAndType        #46:#47       // testObject:Ljava/lang/Object;
+   #84 = Utf8               test final static address
+   #85 = NameAndType        #49:#40       // addressFnial:Ljava/lang/String;
+   #86 = Utf8               java/lang/String
+   #87 = Utf8               686868686868686
+   #88 = NameAndType        #52:#113      // "<init>":(Ljava/lang/String;)V
+   #89 = NameAndType        #51:#40       // testString:Ljava/lang/String;
+   #90 = Class              #114          // java/lang/System
+   #91 = NameAndType        #115:#116     // out:Ljava/io/PrintStream;
+   #92 = Utf8               Test Say...
+   #93 = NameAndType        #117:#113     // println:(Ljava/lang/String;)V
+   #94 = Class              #118          // java/lang/Integer
+   #95 = NameAndType        #111:#119     // valueOf:(I)Ljava/lang/Integer;
+   #96 = NameAndType        #120:#121     // intValue:()I
+   #97 = NameAndType        #111:#122     // valueOf:(F)Ljava/lang/Float;
+   #98 = Utf8               java/lang/Double
+   #99 = NameAndType        #52:#123      // "<init>":(D)V
+  #100 = NameAndType        #117:#124     // println:(Z)V
+  #101 = Utf8               test static address
+  #102 = NameAndType        #48:#40       // addressStatic:Ljava/lang/String;
+  #103 = Utf8               com/dsz/jvm/new_jvm/JvmTest
+  #104 = Utf8               [Ljava/lang/String;
+  #105 = Utf8               java/lang/Float
+  #106 = Utf8               java/io/PrintStream
+  #107 = Methodref          #125.#126     // java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  #108 = Utf8               \u0001\u0001
+  #109 = Utf8               makeConcatWithConstants
+  #110 = Utf8               (Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+  #111 = Utf8               valueOf
+  #112 = Utf8               (D)Ljava/lang/Double;
+  #113 = Utf8               (Ljava/lang/String;)V
+  #114 = Utf8               java/lang/System
+  #115 = Utf8               out
+  #116 = Utf8               Ljava/io/PrintStream;
+  #117 = Utf8               println
+  #118 = Utf8               java/lang/Integer
+  #119 = Utf8               (I)Ljava/lang/Integer;
+  #120 = Utf8               intValue
+  #121 = Utf8               ()I
+  #122 = Utf8               (F)Ljava/lang/Float;
+  #123 = Utf8               (D)V
+  #124 = Utf8               (Z)V
+  #125 = Class              #127          // java/lang/invoke/StringConcatFactory
+  #126 = NameAndType        #109:#131     // makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  #127 = Utf8               java/lang/invoke/StringConcatFactory
+  #128 = Class              #133          // java/lang/invoke/MethodHandles$Lookup
+  #129 = Utf8               Lookup
+  #130 = Utf8               InnerClasses
+  #131 = Utf8               (Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  #132 = Class              #134          // java/lang/invoke/MethodHandles
+  #133 = Utf8               java/lang/invoke/MethodHandles$Lookup
+  #134 = Utf8               java/lang/invoke/MethodHandles
 {
   private java.lang.Integer age;
     descriptor: Ljava/lang/Integer;
     flags: (0x0002) ACC_PRIVATE
 
   private java.lang.String name;
+    descriptor: Ljava/lang/String;
+    flags: (0x0002) ACC_PRIVATE
+
+  private java.lang.String name2;
+    descriptor: Ljava/lang/String;
+    flags: (0x0002) ACC_PRIVATE
+
+  private java.lang.String name3;
+    descriptor: Ljava/lang/String;
+    flags: (0x0002) ACC_PRIVATE
+
+  private java.lang.String name5;
     descriptor: Ljava/lang/String;
     flags: (0x0002) ACC_PRIVATE
 
@@ -122,48 +180,75 @@ Constant pool:
     flags: (0x0012) ACC_PRIVATE, ACC_FINAL
     ConstantValue: String test final static address
 
+  private java.lang.String testString;
+    descriptor: Ljava/lang/String;
+    flags: (0x0002) ACC_PRIVATE
+
   public com.dsz.jvm.new_jvm.JvmTest();
     descriptor: ()V
     flags: (0x0001) ACC_PUBLIC
     Code:
-      stack=3, locals=1, args_size=1
+      stack=4, locals=1, args_size=1
          0: aload_0
          1: invokespecial #1                  // Method java/lang/Object."<init>":()V
          4: aload_0
          5: ldc           #2                  // String Jack
          7: putfield      #3                  // Field name:Ljava/lang/String;
         10: aload_0
-        11: ldc2_w        #4                  // double 100.0d
-        14: invokestatic  #6                  // Method java/lang/Double.valueOf:(D)Ljava/lang/Double;
-        17: putfield      #7                  // Field salary:Ljava/lang/Double;
-        20: aload_0
-        21: new           #8                  // class java/lang/Object
-        24: dup
-        25: invokespecial #1                  // Method java/lang/Object."<init>":()V
-        28: putfield      #9                  // Field testObject:Ljava/lang/Object;
-        31: aload_0
-        32: ldc           #10                 // String test final static address
-        34: putfield      #11                 // Field addressFnial:Ljava/lang/String;
-        37: return
+        11: ldc           #4                  // String Jack2
+        13: putfield      #5                  // Field name2:Ljava/lang/String;
+        16: aload_0
+        17: aload_0
+        18: getfield      #3                  // Field name:Ljava/lang/String;
+        21: aload_0
+        22: getfield      #5                  // Field name2:Ljava/lang/String;
+        25: invokedynamic #6,  0              // InvokeDynamic #0:makeConcatWithConstants:(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+        30: putfield      #7                  // Field name3:Ljava/lang/String;
+        33: aload_0
+        34: ldc           #8                  // String Jack5Jack5
+        36: putfield      #9                  // Field name5:Ljava/lang/String;
+        39: aload_0
+        40: ldc2_w        #10                 // double 100.0d
+        43: invokestatic  #12                 // Method java/lang/Double.valueOf:(D)Ljava/lang/Double;
+        46: putfield      #13                 // Field salary:Ljava/lang/Double;
+        49: aload_0
+        50: new           #14                 // class java/lang/Object
+        53: dup
+        54: invokespecial #1                  // Method java/lang/Object."<init>":()V
+        57: putfield      #15                 // Field testObject:Ljava/lang/Object;
+        60: aload_0
+        61: ldc           #16                 // String test final static address
+        63: putfield      #17                 // Field addressFnial:Ljava/lang/String;
+        66: aload_0
+        67: new           #18                 // class java/lang/String
+        70: dup
+        71: ldc           #19                 // String 686868686868686
+        73: invokespecial #20                 // Method java/lang/String."<init>":(Ljava/lang/String;)V
+        76: putfield      #21                 // Field testString:Ljava/lang/String;
+        79: return
       LineNumberTable:
         line 8: 0
         line 11: 4
         line 12: 10
-        line 13: 20
-        line 15: 31
+        line 13: 16
+        line 14: 33
+        line 15: 39
+        line 16: 49
+        line 18: 60
+        line 19: 66
 
   public void say();
     descriptor: ()V
     flags: (0x0001) ACC_PUBLIC
     Code:
       stack=2, locals=1, args_size=1
-         0: getstatic     #12                 // Field java/lang/System.out:Ljava/io/PrintStream;
-         3: ldc           #13                 // String Test Say...
-         5: invokevirtual #14                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+         0: getstatic     #22                 // Field java/lang/System.out:Ljava/io/PrintStream;
+         3: ldc           #23                 // String Test Say...
+         5: invokevirtual #24                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
          8: return
       LineNumberTable:
-        line 18: 0
-        line 19: 8
+        line 22: 0
+        line 23: 8
 
   public static java.lang.Integer calc(java.lang.Integer, java.lang.Integer);
     descriptor: (Ljava/lang/Integer;Ljava/lang/Integer;)Ljava/lang/Integer;
@@ -171,61 +256,61 @@ Constant pool:
     Code:
       stack=2, locals=3, args_size=2
          0: iconst_3
-         1: invokestatic  #15                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+         1: invokestatic  #25                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
          4: astore_0
          5: aload_0
-         6: invokevirtual #16                 // Method java/lang/Integer.intValue:()I
+         6: invokevirtual #26                 // Method java/lang/Integer.intValue:()I
          9: aload_1
-        10: invokevirtual #16                 // Method java/lang/Integer.intValue:()I
+        10: invokevirtual #26                 // Method java/lang/Integer.intValue:()I
         13: iadd
-        14: invokestatic  #15                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+        14: invokestatic  #25                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
         17: astore_2
         18: aload_2
         19: areturn
       LineNumberTable:
-        line 22: 0
-        line 23: 5
-        line 24: 18
+        line 26: 0
+        line 27: 5
+        line 28: 18
 
   public static void main(java.lang.String[]);
     descriptor: ([Ljava/lang/String;)V
     flags: (0x0009) ACC_PUBLIC, ACC_STATIC
     Code:
       stack=4, locals=4, args_size=1
-         0: ldc2_w        #17                 // double 16.0d
-         3: invokestatic  #6                  // Method java/lang/Double.valueOf:(D)Ljava/lang/Double;
-         6: astore_1
-         7: new           #19                 // class java/lang/Double
-        10: dup
-        11: ldc2_w        #20                 // double 300.0d
-        14: invokespecial #22                 // Method java/lang/Double."<init>":(D)V
-        17: astore_2
-        18: ldc2_w        #17                 // double 16.0d
-        21: invokestatic  #6                  // Method java/lang/Double.valueOf:(D)Ljava/lang/Double;
-        24: astore_3
-        25: getstatic     #12                 // Field java/lang/System.out:Ljava/io/PrintStream;
-        28: aload_1
-        29: aload_3
-        30: if_acmpne     37
-        33: iconst_1
-        34: goto          38
-        37: iconst_0
-        38: invokevirtual #23                 // Method java/io/PrintStream.println:(Z)V
-        41: return
+         0: ldc           #27                 // float 16.0f
+         2: invokestatic  #28                 // Method java/lang/Float.valueOf:(F)Ljava/lang/Float;
+         5: astore_1
+         6: new           #29                 // class java/lang/Double
+         9: dup
+        10: ldc2_w        #30                 // double 300.0d
+        13: invokespecial #32                 // Method java/lang/Double."<init>":(D)V
+        16: astore_2
+        17: ldc           #27                 // float 16.0f
+        19: invokestatic  #28                 // Method java/lang/Float.valueOf:(F)Ljava/lang/Float;
+        22: astore_3
+        23: getstatic     #22                 // Field java/lang/System.out:Ljava/io/PrintStream;
+        26: aload_1
+        27: aload_3
+        28: if_acmpne     35
+        31: iconst_1
+        32: goto          36
+        35: iconst_0
+        36: invokevirtual #33                 // Method java/io/PrintStream.println:(Z)V
+        39: return
       LineNumberTable:
-        line 29: 0
-        line 30: 7
-        line 31: 18
-        line 32: 25
-        line 33: 41
+        line 33: 0
+        line 34: 6
+        line 35: 17
+        line 36: 23
+        line 37: 39
       StackMapTable: number_of_entries = 2
         frame_type = 255 /* full_frame */
-          offset_delta = 37
-          locals = [ class "[Ljava/lang/String;", class java/lang/Double, class java/lang/Double, class java/lang/Double ]
+          offset_delta = 35
+          locals = [ class "[Ljava/lang/String;", class java/lang/Float, class java/lang/Double, class java/lang/Float ]
           stack = [ class java/io/PrintStream ]
         frame_type = 255 /* full_frame */
           offset_delta = 0
-          locals = [ class "[Ljava/lang/String;", class java/lang/Double, class java/lang/Double, class java/lang/Double ]
+          locals = [ class "[Ljava/lang/String;", class java/lang/Float, class java/lang/Double, class java/lang/Float ]
           stack = [ class java/io/PrintStream, int ]
 
   static {};
@@ -233,10 +318,16 @@ Constant pool:
     flags: (0x0008) ACC_STATIC
     Code:
       stack=1, locals=0, args_size=0
-         0: ldc           #24                 // String test static address
-         2: putstatic     #25                 // Field addressStatic:Ljava/lang/String;
+         0: ldc           #34                 // String test static address
+         2: putstatic     #35                 // Field addressStatic:Ljava/lang/String;
          5: return
       LineNumberTable:
-        line 14: 0
+        line 17: 0
 }
 SourceFile: "JvmTest.java"
+InnerClasses:
+  public static final #129= #128 of #132; // Lookup=class java/lang/invoke/MethodHandles$Lookup of class java/lang/invoke/MethodHandles
+BootstrapMethods:
+  0: #74 REF_invokeStatic java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #75 \u0001\u0001

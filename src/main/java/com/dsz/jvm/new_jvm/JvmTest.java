@@ -9,10 +9,14 @@ public class JvmTest {
 
     private Integer age;
     private String name = "Jack";
+    private String name2 = "Jack2";
+    private String name3 = name + name2;
+    private String name5 = "Jack5" + "Jack5";
     private Double salary = 100.0;
     private Object testObject  = new Object();
     private static String addressStatic = "test static address";
     private final String addressFnial = "test final static address";
+    private String testString = new String("686868686868686");
 
     public void say() {
         System.out.println("Test Say...");
