@@ -18,7 +18,7 @@ nohup java -jar -Xverify:none jvm.jar  > jvm.log 2>&1 & (参数-Xverify:none生�
 nohup java -jar jvm.jar  -Xverify:none  > jvm.log 2>&1 &(参数-Xverify:none放在jar之后，可以启动成功但是参数-Xverify:none不会生效)
 
 
-#多参数启动实例(后台启动模式)
+#多参数启动示例(后台启动模式)
 nohup java -jar \
 -Djava.rmi.server.hostname=192.168.10.16 \
 -Dcom.sun.management.jmxremote \
@@ -116,8 +116,8 @@ jinfo -sysprops pid
 -XX:SurvivorRatio=8
 -XX:HeapDumpPath=E:/test/gc.hprof
 
-
-
+7、JDK11输出heap dump和gc log
+-XX:+PrintFlagsFinal -Xms100M -Xmx100M -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=D:\heap.hprof -Xlog:gc*:D:\gc.log
 
 
 

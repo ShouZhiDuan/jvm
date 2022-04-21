@@ -11,6 +11,11 @@ public class JvmApplication {
         SpringApplication springApplication = new SpringApplication(JvmApplication.class);
         springApplication.setBannerMode(Banner.Mode.OFF);
         springApplication.run(args);
+//        List list = new ArrayList();
+//        while (true){
+//            list.add(new byte[20]);
+//            System.out.println("add bytes success");
+//        }
     }
 
 }
