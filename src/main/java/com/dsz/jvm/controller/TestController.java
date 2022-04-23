@@ -40,8 +40,8 @@ public class TestController {
 
 
     @PostMapping("/json")
-    //public Object json(@RequestBody JsonTestDTO dto){
-    public Object json(){
+    public Object json(@RequestBody JsonTestDTO dto){
+    //public Object json(){
         JsonTestDTO testDTO = new JsonTestDTO();
         return testDTO;
     }

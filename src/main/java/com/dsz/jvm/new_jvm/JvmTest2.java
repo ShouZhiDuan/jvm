@@ -7,6 +7,7 @@ package com.dsz.jvm.new_jvm;
  */
 public class JvmTest2 {
 
+    private int intflagB = 10;
     private int intflag = 111111;
     private double aDoubleflag = 222222;
     private long aLongflag = 333333;
@@ -18,6 +19,7 @@ public class JvmTest2 {
     void test() {
         String str2 = new String("101010101010");
         String str3 = "121212121212";
+        String str6 = "a" + "b" + "c";
         System.out.println("666666");
         int a = 777;
         int b = 888;
