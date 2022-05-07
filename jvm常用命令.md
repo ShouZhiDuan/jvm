@@ -101,6 +101,7 @@ G1 Old Generation:
 
 ```shell
 jmap -dump:format=b,file=D://heap.hprof <进程ID>
+jmap -dump:live,format=b,file=heap.bin <pid>
 ```
 
 ```shell

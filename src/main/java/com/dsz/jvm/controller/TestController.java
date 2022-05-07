@@ -46,6 +46,11 @@ public class TestController {
         return testDTO;
     }
 
+    @GetMapping("/2")
+    public Object test2(String name){
+        return name;
+    }
+
 
 
 
