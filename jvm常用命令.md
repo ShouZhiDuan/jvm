@@ -224,7 +224,15 @@ jvm.jar
 -XX:+UseCompressedClassPointers
 ```
 
-
-
-
-
+## 16、常用参数
+```shell
+-Xms100m
+-Xmx100m
+-Xss200k
+-XX:+PrintGCDetails
+-XX:+PrintFlagsFinal
+-XX:+PrintCommandLineFlags
+-XX:+HeapDumpOnOutOfMemoryError
+-XX:HeapDumpPath=D:\gc\heap\heap.hprof
+-Xlog:gc*:D:\gc\log\gc.log
+```
