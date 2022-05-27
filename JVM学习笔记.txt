@@ -118,13 +118,3 @@ jinfo -sysprops pid
 
 7、JDK11输出heap dump和gc log
 -XX:+PrintFlagsFinal -Xms100M -Xmx100M -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=D:\heap.hprof -Xlog:gc*:D:\gc.log
-
-
-
-
-
-
-
-
-
-
